@@ -42,8 +42,6 @@ void Euler(double* p1, double* p2, double* q1, double* q2, double* H, const doub
 			q2(i) = q2(i-1) + dt * p2(i);
 			H(i) = 1/2.0 * (p1(i)*p1(i) + p2(i)*p2(i)) - 1.0/sqrt(q1(i)*q1(i) + q2(i)*q2(i));
 		
-			cout << p1(i) << "\t" << p2(i) << "\t" << q1(i) << "\t" << q2(i) << "\t" << dt << "\t" << H(i) << endl;
-
 	}
 
 }
